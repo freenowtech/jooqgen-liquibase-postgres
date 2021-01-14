@@ -20,6 +20,7 @@
         <java.version>1.8</java.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <testcontainers.version>1.15.1</testcontainers.version>
     </properties>
 
     <scm>
@@ -47,17 +48,17 @@
             <dependency>
                 <groupId>org.testcontainers</groupId>
                 <artifactId>jdbc</artifactId>
-                <version>1.11.4</version>
+                <version>${testcontainers.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.testcontainers</groupId>
                 <artifactId>postgresql</artifactId>
-                <version>1.11.4</version>
+                <version>${testcontainers.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.testcontainers</groupId>
                 <artifactId>mysql</artifactId>
-                <version>1.11.4</version>
+                <version>${testcontainers.version}</version>
             </dependency>
             <dependency>
                 <!-- JUnit is a compile-level dependency of Testcontainers -->
