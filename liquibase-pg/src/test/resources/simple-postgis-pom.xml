@@ -33,7 +33,7 @@
                     </liquibase>
 
                     <databaseName>postgis</databaseName>
-                    <databaseVersion>9.6</databaseVersion>
+                    <databaseVersion>9.6-3.1</databaseVersion>
                 </configuration>
             </plugin>
         </plugins>
