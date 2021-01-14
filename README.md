@@ -1,5 +1,7 @@
 # JOOQ Containers
 
+[ ![Download](https://api.bintray.com/packages/mytaxi/oss/jooqcontainers/images/download.svg) ](https://bintray.com/mytaxi/oss/jooqcontainers/_latestVersion)
+
 JOOQ Codegen + Testcontainers = JOOQ Containers
 
 ## Examples
@@ -179,3 +181,7 @@ If generated classes fail to compile,
     </executions>
  </plugin>
 ```
+
+# Contributors: Publishing a new version
+
+A guide for contributors can be found at [PUBLISHING.md](PUBLISHING.md)
