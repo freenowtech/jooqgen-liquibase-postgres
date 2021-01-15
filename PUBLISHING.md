@@ -25,7 +25,7 @@ at https://bintray.com/mytaxi/oss/jooqcontainers.
 <settings>
     <servers>
         <server>
-            <id>bintray-mytaxi-oss</id>
+            <id>bintray-repo-free-now</id>
             <username>your-bintray-username</username>
             <password>the-api-key</password>
         </server>
