@@ -12,8 +12,6 @@ import org.jooq.meta.jaxb.Configuration;
 @Mojo(name = "generate", defaultPhase = LifecyclePhase.GENERATE_SOURCES)
 public class LiquibasePgGenerateMojo extends AbstractMojo
 {
-    private static final String TARGET_GENERATED_SOURCES_JOOQ = "target/generated-sources/jooq/";
-
     @Parameter(property = "generate.jooq", required = true)
     private Configuration jooq = new Configuration();
 
@@ -37,10 +35,10 @@ public class LiquibasePgGenerateMojo extends AbstractMojo
     public void execute()
     {
         String liquibaseChangeLogFile = (String) liquibase.get("changeLogFile");
-        LiquibaseGenerator.setJooqTargetDirectory(jooq, TARGET_GENERATED_SOURCES_JOOQ);
+        LiquibaseGenerator.setJooqTargetDirectory(jooq);
         LiquibaseGenerator generator;
 
-        project.addCompileSourceRoot(TARGET_GENERATED_SOURCES_JOOQ);
+        project.addCompileSourceRoot(jooq.getGenerator().getTarget().getDirectory());
 
         if (databaseVersion != null)
         {

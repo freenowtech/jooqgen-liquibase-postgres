@@ -101,7 +101,7 @@ public abstract class AbstractGenerator
     }
 
 
-    public static void setJooqTargetDirectory(Configuration jooqConfig, String targetDirectory)
+    public static void setJooqTargetDirectory(Configuration jooqConfig)
     {
         if (jooqConfig.getGenerator() == null)
         {
@@ -113,7 +113,7 @@ public abstract class AbstractGenerator
             jooqConfig.getGenerator().setTarget(new Target());
         }
 
-        jooqConfig.getGenerator().getTarget().setDirectory(Paths.get(targetDirectory).toAbsolutePath().toString());
+        jooqConfig.getGenerator().getTarget().setDirectory(Paths.get(jooqConfig.getGenerator().getTarget().getDirectory()).toAbsolutePath().toString());
     }
 
 
