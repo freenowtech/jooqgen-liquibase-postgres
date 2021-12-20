@@ -4,7 +4,7 @@
 
     <groupId>com.free-now.jooqcontainers</groupId>
     <artifactId>jooqcontainers-parent</artifactId>
-    <version>1.0.4</version>
+    <version>1.0.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -24,7 +24,7 @@
     </properties>
 
     <scm>
-        <tag>jooqcontainers-parent-1.0.4</tag>
+        <tag>HEAD</tag>
         <connection>scm:git:ssh://git@github.com/freenowtech/jooqcontainers.git</connection>
     </scm>
 
