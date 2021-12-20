@@ -1,19 +1,11 @@
-# Publishing to JCenter
+# Publishing to public repo
 
-[ ![Download](https://api.bintray.com/packages/mytaxi/oss/jooqcontainers/images/download.svg) ](https://bintray.com/mytaxi/oss/jooqcontainers/_latestVersion)
-
-This is a guide on how to publish to JCenter manually.
+This is a guide on how to publish to public repo manually.
 
 ## Bintray repository
 
-This library is published to JCenter through Bintray. The package can be found
-at https://bintray.com/mytaxi/oss/jooqcontainers.
+This library was published to JCenter through Bintray before it was discontinued. The latest version available there is v1.0.1 at https://bintray.com/mytaxi/oss/jooqcontainers. 
 
-## Find your credentials
-
-- Open https://bintray.com/profile/edit
-- Click **API Key**
-- Use the **Copy to Clipboard** or **Show** button to copy the API Key
 
 ## Setup Maven
 
@@ -25,8 +17,8 @@ at https://bintray.com/mytaxi/oss/jooqcontainers.
 <settings>
     <servers>
         <server>
-            <id>bintray-repo-free-now</id>
-            <username>your-bintray-username</username>
+            <id>repo-publish-to</id>
+            <username>your-username</username>
             <password>the-api-key</password>
         </server>
     </servers>
