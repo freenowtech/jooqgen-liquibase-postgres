@@ -1,6 +1,8 @@
-# JOOQ Containers
+> [!WARNING]  
+> Please note: this plugin is *DEPRECATED* and not maintained. It should be replaced with
+> [testcontainers-jooq-codegen-maven-plugin](https://github.com/testcontainers/testcontainers-jooq-codegen-maven-plugin)
 
-[ ![Download](https://api.bintray.com/packages/mytaxi/oss/jooqcontainers/images/download.svg) ](https://bintray.com/mytaxi/oss/jooqcontainers/_latestVersion)
+# JOOQ Containers
 
 JOOQ Codegen + Testcontainers = JOOQ Containers
 
